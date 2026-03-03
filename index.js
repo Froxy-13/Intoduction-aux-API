@@ -29,11 +29,38 @@ const annonces = [
     },
     {
         id: 3,
-        titre: "Appartement à louer - Plateau",
-        description: "Appartement lumineux et calme à louer dans le quartier du Plateau.",
-        prix: 150000,
-        Catégorie: "Appartements",
-        Vendeur: "Mamadou Diop",
+        titre: "Sac à dos - quasi neuf",
+        description: "Sac à dos en excellent état, presque neuf, idéal pour les étudiants.",
+        prix: 9000,
+        Catégorie: "Accessoires",
+        Vendeur: "Alpha Diallo",
+        Ville: "Dakar"
+    },
+    {
+        id: 4,
+        titre: "Livre de programmation - C",
+        description: "Livre de programmation en langage C, parfait pour les débutants.",
+        prix: 3000,
+        Catégorie: "Livres",
+        Vendeur: "Moussa Ndiaye",
+        Ville: "Dakar"
+    },
+    {
+        id: 5,
+        titre: "Cartes UNO",
+        description: "Paquet de cartes UNO complet, en excellent état.",
+        prix: 2500,
+        Catégorie: "Jeux",
+        Vendeur: "Fatou Sow",
+        Ville: "Dakar"
+    },
+    {
+        id: 6,
+        titre: "Stylo 4 couleurs",
+        description: "Stylo 4 couleurs en bon état, idéal pour les étudiants.",
+        prix: 1000,
+        Catégorie: "Accessoires",
+        Vendeur: "Aissatou Fall",
         Ville: "Dakar"
     }
 ];
@@ -42,6 +69,8 @@ const annonces = [
 app.get('/', (req, res) => {
     res.json({
         message: 'Bienvenue sur Dakar Annonces !',
+        date_heure: new Date().toLocaleString('fr-FR'),
+        total_annonces: annonces.length,
         routes_disponibles: [
             'GET /api/info',
             'GET /api/annonces'
