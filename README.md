@@ -4,7 +4,7 @@
 
 API REST de petites annonces pour le campus de l'Université Cheikh Anta Diop (UCAD), développée dans le cadre du cours **Web Services & APIs** avec Node.js et Express.
 
-**Auteur :** Alpha Diallo  
+**Auteur :**  **Alpha Diallo** 
 **Version :** 1.0.0  
 **Contexte académique :** Lab 1 - Environnement & Premier Serveur
 
