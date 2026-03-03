@@ -1,0 +1,24 @@
+{
+  "name": "dakar-annonces",
+  "version": "1.0.0",
+  "description": "API de petites annonces pour le campus UCAD",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    " api",
+    " annonces ",
+    " ucad "
+  ],
+  "author": "Alpha Diallo",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
